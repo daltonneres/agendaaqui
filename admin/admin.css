@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #1e1e2f;
+  color: #fff;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+button {
+  background: #6c63ff;
+  border: none;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #584fe0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #2b2b40;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+th {
+  background: #3a3a5a;
+  padding: 12px;
+  text-align: left;
+}
+
+td {
+  padding: 12px;
+  border-bottom: 1px solid #333;
+}
+
+tr:nth-child(even) {
+  background: #24243a;
+}
+
+.status {
+  padding: 5px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.confirmado {
+  background: #4caf50;
+}
+
+.pendente {
+  background: #ff9800;
+}
+
+.cancelado {
+  background: #f44336;
+}

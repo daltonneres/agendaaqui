@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin - Agendamentos</title>
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+<header>
+  <h1>📊 Painel de Agendamentos</h1>
+  <button onclick="exportarCSV()">⬇️ Exportar CSV</button>
+</header>
+
+<table>
+  <thead>
+    <tr>
+      <th>Cliente</th>
+      <th>WhatsApp</th>
+      <th>Serviço</th>
+      <th>Data</th>
+      <th>Hora</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody id="tabela"></tbody>
+</table>
+
+<script src="admin.js"></script>
+</body>
+</html>
