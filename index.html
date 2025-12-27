@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Sistema de Agendamentos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>📅 Sistema de Agendamentos</h1>
+  <p class="subtitle">Agende horários de forma simples e organizada.</p>
+
+  <button class="info-btn" onclick="abrirModal()">ℹ️ Sobre o Sistema</button>
+
+  <div class="admin-demo">
+    <p>🔐 Área Administrativa (Demo)</p>
+    <a href="admin/admin.html" target="_blank">Acessar Painel Admin</a>
+  </div>
+
+  <form id="agendamentoForm">
+    <input type="text" id="nome" placeholder="Nome do cliente" required>
+    <input type="tel" id="telefone" placeholder="WhatsApp" required>
+
+    <select id="servico" required>
+      <option value="">Selecione o serviço</option>
+      <option value="Corte">Corte de Cabelo</option>
+      <option value="Barba">Barba</option>
+      <option value="Corte + Barba">Corte + Barba</option>
+    </select>
+
+    <div class="grid">
+      <input type="date" id="data" required>
+      <input type="time" id="hora" required>
+    </div>
+
+    <button type="submit" class="primary">Agendar Horário</button>
+  </form>
+
+  <p id="mensagem"></p>
+</div>
+
+<!-- Modal -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="fecharModal()">&times;</span>
+    <h2>⚙️ Funcionalidades</h2>
+    <ul>
+      <li>📅 Agendamento online</li>
+      <li>📊 Painel administrativo</li>
+      <li>🕒 Controle de horários</li>
+      <li>📥 Exportação para planilhas</li>
+    </ul>
+    <p class="obs">Demonstração front-end para portfólio.</p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

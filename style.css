@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #1e1e2f, #3a3a5a);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.container {
+  background: #2b2b40;
+  padding: 30px;
+  border-radius: 14px;
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #ccc;
+  margin-bottom: 15px;
+}
+
+input, select, button {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  border: none;
+}
+
+.grid {
+  display: flex;
+  gap: 10px;
+}
+
+button.primary {
+  background: #6c63ff;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button.primary:hover {
+  background: #584fe0;
+}
+
+.info-btn {
+  background: transparent;
+  border: 1px solid #444;
+  color: #aaa;
+  padding: 8px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.admin-demo {
+  background: #24243a;
+  border: 1px dashed #444;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.admin-demo p {
+  font-size: 12px;
+  color: #aaa;
+  margin-bottom: 6px;
+}
+
+.admin-demo a {
+  color: #03a9f4;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#mensagem {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: #2b2b40;
+  padding: 20px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 400px;
+  text-align: left;
+}
+
+.close {
+  float: right;
+  cursor: pointer;
+}
